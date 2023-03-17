@@ -17,7 +17,11 @@ class _LoginScreenState extends State<LoginScreen> {
       // ignore: prefer_const_literals_to_create_immutables
       children: [
         const Text('Hello World'),
-        const TextButton(onPressed: null, child: Text('CLICK'))
+        const TextButton(onPressed: null, child: Text('CLICK')),
+        const TextField(
+          decoration:
+              InputDecoration(labelText: 'Login', border: OutlineInputBorder()),
+        )
       ],
     ));
   }
